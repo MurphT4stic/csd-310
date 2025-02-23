@@ -39,7 +39,7 @@ for movie in short_movies:
 
 # Query 4: Select film names and directors
 print("DISPLAYING Director and Films")
-cursor.execute("SELECT film_director, film_name FROM film ORDER BY film_director")
+cursor.execute("SELECT film_director, film_name FROM film ORDER BY director")
 director_movies = cursor.fetchall()
 for movie in director_movies:
     print("Director: {}\n Film Name:{}\n".format(movie[0], movie[1]))
